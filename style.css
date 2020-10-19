@@ -120,14 +120,38 @@ body {
 
 .app-download {
   height: 3rem;
-  width: 20rem;
+  width: 10rem;
   background-size: cover;
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/download_apple.png');
+  background-image: url("./img/download_apple.png");
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/download_android.png');
+  background-image: url("./img/download_android.png");
+}
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+  .instagram-wrapper {
+    width: 90%;
+  }
+  .instagram-phone {
+    display: none;
+  }
+  .instagram-continue {
+    width: 100%;
+  }
+  .group {
+    border: 1px solid transparent;
+  }
 }
